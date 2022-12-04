@@ -9,7 +9,7 @@
     - name: Create Application container
       docker_container:
         name: docker-pipeline
-        image: anujsharma1990/docker-pipeline:latest
+        image: pjaryan/docker-pipeline:latest
         state: started
         recreate: yes
         exposed_ports:
