@@ -2,6 +2,10 @@ def containerName="docker-pipeline"
 def tag="latest"
 def dockerHubUser="anujsharma1990"
 def httpPort="8090"
+pipeline {
+    agent {
+        docker { image 'node:16-alpine' }
+    }
 
 node {
 
@@ -45,4 +49,5 @@ node {
         """
     }
 
+}
 }
